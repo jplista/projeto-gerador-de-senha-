@@ -1,2 +1,4 @@
-Flask
-gunicorn
+fastapi
+uvicorn
+python-multipart
+pydantic
