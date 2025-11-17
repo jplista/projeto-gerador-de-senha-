@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Gerador e Verificador de Senhas</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<main class="container">
+<header>
+<h1>🔏 Gerador & Verificador de Senhas 🔏</h1>
+<p class="lead">Ferramenta educativa — avalie a força de uma senha e gere senhas seguras.</p>
+</header>
+
+
+<section class="card">
+<label for="senha">Digite sua senha</label>
+<div class="row">
+<input id="senha" type="password" placeholder="Digite uma senha..." />
+<button id="toggle">Mostrar</button>
+</div>
+<div id="resultado" class="resultado"></div>
+<pre id="problemas" class="problemas"></pre>
+<div class="barra-wrap"><div id="barra" class="barra"></div></div>
+<button id="avaliar">Avaliar</button>
+</section>
+
+
+<section class="card">
+<h2>Gerar senha forte</h2>
+<div class="row">
+<input id="tamanho" type="number" min="4" max="128" value="16">
+<label><input id="simbolos" type="checkbox" checked> Incluir símbolos</label>
+</div>
+<button id="gerar">Gerar</button>
+<div class="row">
+<input id="saida" readonly>
+<button id="copiar">Copiar</button>
+</div>
+</section>
+
+
+<footer>
+<small>gerador de senhas desenvolvido por  João Pedro , davi & Maria Eduarda</small>
+</footer>
+</main>
+<script src="/static/js/main.js"></script>
+</body>
+</html>

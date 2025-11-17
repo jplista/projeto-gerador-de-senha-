@@ -1,0 +1,137 @@
+/* ================================
+   Definição de variáveis globais
+   ================================ */
+:root {
+  --bg: #0f1724;        /* Cor de fundo principal */
+  --card: #0b1220;      /* Cor de fundo dos cartões */
+  --accent: #6ee7b7;    /* Cor de destaque para botões e elementos ativos */
+  --muted: #9aa4b2;     /* Cor para textos secundários ou menos relevantes */
+}
+
+/* ================================
+   Reset e configuração básica
+   ================================ */
+* {
+  box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho total */
+}
+
+body {
+  margin: 0; /* Remove margens padrão do navegador */
+  font-family: Inter, Segoe UI, Roboto, Arial; /* Tipografia principal */
+  background: linear-gradient(180deg, #071029, #071834); /* Gradiente de fundo */
+  color: #e6eef6; /* Cor padrão do texto */
+}
+
+/* ================================
+   Estrutura principal do container
+   ================================ */
+.container {
+  max-width: 920px; /* Largura máxima do conteúdo */
+  margin: 32px auto; /* Centraliza horizontalmente com espaçamento superior/inferior */
+  padding: 16px; /* Espaçamento interno */
+}
+
+/* ================================
+   Cabeçalho
+   ================================ */
+header {
+  text-align: center; /* Centraliza o conteúdo */
+  margin-bottom: 18px; /* Espaçamento inferior */
+}
+
+h1 {
+  margin: 0; /* Remove margens padrão */
+  font-size: 28px; /* Tamanho da fonte do título */
+}
+
+.lead {
+  color: var(--muted); /* Cor secundária para subtítulo */
+  margin-top: 6px; /* Espaçamento superior */
+}
+
+/* ================================
+   Cartões de conteúdo
+   ================================ */
+.card {
+  background: rgba(255, 255, 255, 0.03); /* Fundo translúcido */
+  padding: 18px; /* Espaçamento interno */
+  border-radius: 14px; /* Bordas arredondadas */
+  margin: 14px 0; /* Espaçamento vertical entre cartões */
+}
+
+/* ================================
+   Estrutura de linhas flexíveis
+   ================================ */
+.row {
+  display: flex; /* Layout flexível */
+  gap: 8px; /* Espaçamento entre elementos */
+  align-items: center; /* Alinhamento vertical central */
+}
+
+/* ================================
+   Campos de entrada
+   ================================ */
+input[type=password],
+input[type=number],
+input[readonly] {
+  flex: 1; /* Ocupa espaço proporcional */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 1px solid rgba(255, 255, 255, 0.06); /* Borda discreta */
+  background: transparent; /* Fundo transparente */
+  color: inherit; /* Herda cor do texto */
+}
+
+/* ================================
+   Botões
+   ================================ */
+button {
+  background: var(--accent); /* Cor de destaque */
+  border: 0; /* Remove borda padrão */
+  padding: 10px 12px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de interação */
+}
+
+/* ================================
+   Barra de progresso
+   ================================ */
+.barra-wrap {
+  background: rgba(255, 255, 255, 0.04); /* Fundo translúcido */
+  height: 12px; /* Altura da barra */
+  border-radius: 12px; /* Bordas arredondadas */
+  margin: 8px 0; /* Espaçamento vertical */
+}
+
+.barra {
+  height: 100%; /* Ocupa toda a altura do container */
+  width: 0; /* Largura inicial (dinâmica) */
+  background: linear-gradient(90deg, #34d399, #059669); /* Gradiente verde */
+  border-radius: 12px; /* Bordas arredondadas */
+}
+
+/* ================================
+   Resultados e mensagens
+   ================================ */
+.resultado {
+  font-weight: 700; /* Texto em negrito */
+  margin-top: 8px; /* Espaçamento superior */
+}
+
+.problemas {
+  background: rgba(255, 255, 255, 0.02); /* Fundo translúcido */
+  padding: 8px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  color: var(--muted); /* Texto secundário */
+  min-height: 48px; /* Altura mínima para consistência visual */
+}
+
+/* ================================
+   Rodapé
+   ================================ */
+footer {
+  text-align: center; /* Centraliza conteúdo */
+  margin-top: 18px; /* Espaçamento superior */
+  color: var(--muted); /* Texto secundário */
+}
+
